@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Название вашего проекта</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f0f7f0;
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      color: #1e2f2e;
+      line-height: 1.4;
+    }
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #c0e0c4;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      background: linear-gradient(135deg, #1f6e43, #2b8c5e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      margin-bottom: 0.75rem;
+    }
+    .hero .subhead {
+      font-size: 1.2rem;
+      color: #2c5a3a;
+      max-width: 700px;
+      margin: 0 auto 1rem;
+    }
+    .hero-fact {
+      background: #e3f2e8;
+      display: inline-block;
+      padding: 0.6rem 1.5rem;
+      border-radius: 60px;
+      font-weight: 600;
+      color: #1a4d2e;
+    }
+    .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .card {
+      background: white;
+      border-radius: 32px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px -12px rgba(0, 32, 0, 0.15);
+      transition: transform 0.2s;
+      border: 1px solid #d9eadf;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card-header {
+      padding: 1.8rem 1.8rem 0.8rem 1.8rem;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-bottom: 2px solid #eef5ea;
+    }
+    .card-header i {
+      font-size: 2.5rem;
+      background: #eafaf0;
+      width: 58px;
+      height: 58px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      color: #2b7a4b;
+    }
+    .card-header h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #1d4d2d;
+    }
+    .card-content {
+      padding: 1.2rem 1.8rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    .steps-block h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+      color: #2c5e3f;
+      border-left: 4px solid #48b47b;
+      padding-left: 12px;
+    }
+    .steps-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .steps-list li {
+      margin-bottom: 0.8rem;
+      display: flex;
+      gap: 12px;
+      align-items: baseline;
+    }
+    .steps-list li i {
+      color: #2ecc71;
+      width: 20px;
+    }
+    .science-block {
+      background: #fef9e6;
+      border-radius: 24px;
+      padding: 1.2rem;
+      border-left: 5px solid #f39c12;
+    }
+    .science-block h4 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      color: #b45f1b;
+      margin-bottom: 0.8rem;
+    }
+    .science-text p {
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+    .data-highlight {
+      background: #fae6b3;
+      padding: 0.15rem 0.5rem;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .simple-illustration {
+      margin-top: 0.8rem;
+      text-align: center;
+      border-top: 1px dashed #cde2d4;
+      padding-top: 1rem;
+      font-size: 2rem;
+      letter-spacing: 6px;
+      color: #4c9f70;
+    }
+    .footer {
+      margin-top: 4rem;
+      text-align: center;
+      background: #e0f0e4;
+      padding: 2rem;
+      border-radius: 48px 48px 28px 28px;
+    }
+    @media (max-width: 750px) {
+      .card-header h2 { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- ========== ЗАГОЛОВОК: НАПИШИТЕ СВОЙ ТЕКСТ ========== -->
+  <div class="hero">
+    <h1>🌍 Заголовок вашего проекта</h1>
+    <div class="subhead">
+      Ваш слоган или описание (например: «Простые шаги для лучшей жизни»)
+    </div>
+    <div class="hero-fact">
+      <i class="fas fa-chart-line"></i> Любой важный факт или цитата
+    </div>
+  </div>
+
+  <!-- СЕТКА КАРТОЧЕК (добавляйте или убирайте карточки) -->
+  <div class="articles-grid">
+    
+    <!-- КАРТОЧКА 1 (образец) -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fas fa-home"></i>   <!-- иконка: можно заменить -->
+        <h2>Название категории 1</h2>
+      </div>
+      <div class="card-content">
+        <div class="steps-block">
+          <h3><i class="fas fa-clipboard-list"></i> Конкретные шаги</h3>
+          <ul class="steps-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Шаг первый</strong> — описание действия</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Шаг второй</strong> — ещё одна идея</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Шаг третий</strong> — ваше предложение</li>
+          </ul>
+        </div>
+        <div class="science-block">
+          <h4><i class="fas fa-flask"></i> Интересные факты / данные</h4>
+          <div class="science-text">
+            <p>📊 <span class="data-highlight">Важный факт или цифра</span> — напишите здесь что-то полезное.</p>
+            <p>🔬 Второй абзац с дополнительной информацией.</p>
+          </div>
+        </div>
+        <div class="simple-illustration">
+          <span>✨ 🏡 ✨</span>   <!-- эмодзи или символы-иллюстрации -->
+        </div>
+      </div>
+    </div>
+
+    <!-- КАРТОЧКА 2 (скопируйте блок выше для новой категории) -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fas fa-bus"></i>
+        <h2>Название категории 2</h2>
+      </div>
+      <div class="card-content">
+        <div class="steps-block">
+          <h3><i class="fas fa-clipboard-list"></i> Конкретные шаги</h3>
+          <ul class="steps-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Действие 1</strong> — текст</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Действие 2</strong> — текст</li>
+          </ul>
+        </div>
+        <div class="science-block">
+          <h4><i class="fas fa-flask"></i> Интересные факты / данные</h4>
+          <div class="science-text">
+            <p>📈 <span class="data-highlight">Цифра или факт</span> — например, статистика.</p>
+            <p>🌍 Дополнительное обоснование.</p>
+          </div>
+        </div>
+        <div class="simple-illustration">
+          <span>🚲 🚆 🚶</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- КАРТОЧКА 3 -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fas fa-apple-alt"></i>
+        <h2>Название категории 3</h2>
+      </div>
+      <div class="card-content">
+        <div class="steps-block">
+          <h3><i class="fas fa-clipboard-list"></i> Конкретные шаги</h3>
+          <ul class="steps-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Шаг А</strong> — описание</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Шаг Б</strong> — описание</li>
+          </ul>
+        </div>
+        <div class="science-block">
+          <h4><i class="fas fa-flask"></i> Интересные факты / данные</h4>
+          <div class="science-text">
+            <p>🍽️ <span class="data-highlight">Научный факт или исследование</span> — полезная информация.</p>
+          </div>
+        </div>
+        <div class="simple-illustration">
+          <span>🥦 🍅 🌽</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- КАРТОЧКА 4 -->
+    <div class="card">
+      <div class="card-header">
+        <i class="fas fa-solar-panel"></i>
+        <h2>Название категории 4</h2>
+      </div>
+      <div class="card-content">
+        <div class="steps-block">
+          <h3><i class="fas fa-clipboard-list"></i> Конкретные шаги</h3>
+          <ul class="steps-list">
+            <li><i class="fas fa-check-circle"></i> <strong>Совет</strong> — подробность</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Ещё совет</strong> — подробность</li>
+          </ul>
+        </div>
+        <div class="science-block">
+          <h4><i class="fas fa-flask"></i> Интересные факты / данные</h4>
+          <div class="science-text">
+            <p>⚡ <span class="data-highlight">Ключевая информация</span> — например, результаты исследований.</p>
+          </div>
+        </div>
+        <div class="simple-illustration">
+          <span>☀️ 🔋 💡</span>
+        </div>
+      </div>
+    </div>
+    <!-- конец карточек: добавьте ещё, скопировав блок .card -->
+  </div>
+
+  <!-- ДОПОЛНИТЕЛЬНЫЙ БЛОК (опционально) -->
+  <div style="background: #eef4ea; border-radius: 40px; padding: 1.5rem; margin: 2rem 0; text-align: center;">
+    <h3 style="color: #1d5a3b;">📢 Заголовок дополнительного блока</h3>
+    <p>Ваш текст: почему этот проект важен, призыв к действию и т.д.</p>
+  </div>
+
+  <!-- ПОДВАЛ -->
+  <div class="footer">
+    <i class="fas fa-globe-americas"></i> Ваш текст в подвале<br>
+    <div style="margin-top: 0.8rem;">✨ Например, контактная информация или ссылки</div>
+    <div class="tiny-note">* Копирайт, дата, источники</div>
+  </div>
+</div>
+</body>
+</html>
